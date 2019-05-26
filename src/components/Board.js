@@ -48,8 +48,8 @@ class Board extends React.Component {
       let randomy = 0;
       console.log(board)
       while (count < 5) {
-        randomx = this.getRndInteger(1, 9);
-        randomy = this.getRndInteger(1, 9);
+        randomx = this.getRndInteger(1, 8);
+        randomy = this.getRndInteger(1, 8);
 
         
         board[randomx].props.children[randomy] = this.renderCell(this.setBallColor(), true)
