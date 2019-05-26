@@ -10,6 +10,7 @@ class Game extends React.Component {
   };
 
 
+
   render() {
     const { boardHeight, boardWidth } = this.state;
     return (
@@ -23,7 +24,9 @@ class Game extends React.Component {
           <h1>
             Upcoming Colors:
           </h1>
-          <UpcomingBall />
+          <div className="upcomingContainer">
+            <UpcomingBall />
+          </div>
         </div>
       </div>
     );
